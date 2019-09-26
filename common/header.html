@@ -3,6 +3,13 @@
     <div class="logo">
       <img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/SIIO-mit-Untertitel-1-1-e1569369745566.jpg" />
     </div>
-    <div class="banner"><img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/index.jpg" /></div>
+    <div class="banner"><a id="banner-url" target="blank" href=""></a><img id="banner-img" src="" /></div>
   </div>
 </header>
+<script type="text/discourse-plugin" version="0.8.13">
+  var var_ad_banner = settings.ad_banner_img;
+  var var_ad_banner_link = settings.ad_banner_link;
+
+  document.getElementById("banner-img").setAttribute("src",var_ad_banner);
+  document.getElementById("banner-url").setAttribute("href",var_ad_banner_link);
+</script>

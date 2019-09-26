@@ -6,11 +6,11 @@ logo_alt:
   default: "siio.de"
   type: string
   description: "Alternative text to display for the top left image"
-add_banner_url:
+ad_banner_img:
   default: ""
   type: string
-  description: "URL to the add banner in the header"
-add_banner_link:
+  description: "URL to the ad banner picture in the header"
+ad_banner_link:
   default: ""
   type: string
   description: "Link target of the add banner in the header"
