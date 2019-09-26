@@ -14,3 +14,16 @@ add_banner_link:
   default: ""
   type: string
   description: "Link target of the add banner in the header"
+footer_coop_link:
+  default: ""
+  type: string
+  description: "Link target of the cooperations link in the footer"
+footer_priv_link:
+  default: ""
+  type: string
+  description: "Link target of the privacy link in the footer"
+footer_imprint_link:
+  default: ""
+  type: string
+  description: "Link target of the imprint link in the footer"
+
