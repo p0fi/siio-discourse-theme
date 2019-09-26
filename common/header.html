@@ -1,52 +1,7 @@
-<!-- Piwik -->
-<script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(["setDomains", ["*.community.hom.ee"]]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//codeatelier.com/analytics/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', 3]);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
-</script>
-  <noscript><p><img src="//codeatelier.com/analytics/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
-  <!-- End Piwik Code -->
-  
 <header>
-    <!-- NAVIGATION -->
-    <nav class="navigation">
-        <a href="https://hom.ee" title="Die modulare Smart Home Zentrale | homee" class="navigation-logo">
-            <img src="https://hom.ee/assets/images/homee-logo.svg" alt="Die modulare Smart Home Zentrale | homee" title="Die modulare Smart Home Zentrale | homee">
-        </a>
-        <ul class="navigation-list">
-            <li><a id="header_store_link" title="Jetzt zum Smart Home aufrüsten!"><h5 class="smaller-font">Store</h5></a></li>
-            <li><a id="header_products_link" title="kompatible Smart Home Produkte"><h5 class="smaller-font">Produkte</h5></a></li>
-            <li><a id="header_community_link" title="Werde Teil unserer Smart Home Community!" class="active"><h5 class="smaller-font">Community</h5></a></li>
-            <li><a id="header_myhomee_link" title="Verbinde dich jetzt mit deinem homee!" target="blank"><h5 class="smaller-font">Mein homee</h5></a></li>
-            <!-- I need this ugly markup to remove the space between the li elements... https://css-tricks.com/fighting-the-space-between-inline-block-elements/ -->
-        </ul>
-        <div class="clear"></div>
-    </nav>
-
-    <a id="home_link">
-        <div class="title-big cc-green" href="http://hom.ee/login">
-        <h2 class="uppercase">Community</h2>
-        </div>
-    </a>
-    <script type="text/discourse-plugin" version="0.8.13">
-        var var_home_link = settings.home_link;
-        var var_store_link = settings.header_store_link;
-        var var_products_link = settings.header_products_link;
-        var var_community_link = settings.header_community_link;
-        var var_myhomee_link = settings.header_myhomee_link;
-
-        document.getElementById("home_link").setAttribute("href",var_home_link);
-        document.getElementById("header_store_link").setAttribute("href",var_store_link);
-        document.getElementById("header_products_link").setAttribute("href",var_products_link);
-        document.getElementById("header_community_link").setAttribute("href",var_community_link);
-        document.getElementById("header_myhomee_link").setAttribute("href",var_myhomee_link);
-    </script>
+    <div style="background-color:white" class="row">
+        <div class="column" align="right"><img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/SIIO-mit-Untertitel-1-1-e1569369745566.jpg"></div>
+        <div class="column"><img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/index.jpg"></div>
+        <div class="column"></div>
+    </div>
 </header>
