@@ -1,0 +1,13 @@
+// Hide header bar when landscape
+@media screen and (orientation:landscape) { 
+    .d-header {
+        position: absolute;
+    } 
+    .scrolled-down {
+        .d-header { display: none; }
+    }
+}
+// Prevent zoom in text inputs
+select, input, textarea {
+  font-size: 16px!important;
+}

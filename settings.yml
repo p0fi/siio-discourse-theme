@@ -1,0 +1,16 @@
+logo_url:
+  default: ""
+  type: string
+  description: "This is the source link to the top left logo"
+logo_alt:
+  default: "siio.de"
+  type: string
+  description: "Alternative text to display for the top left image"
+add_banner_url:
+  default: ""
+  type: string
+  description: "URL to the add banner in the header"
+add_banner_link:
+  default: ""
+  type: string
+  description: "Link target of the add banner in the header"

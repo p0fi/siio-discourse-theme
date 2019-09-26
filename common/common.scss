@@ -1,0 +1,89 @@
+@import "common/foundation/variables";
+@import url('https://fonts.googleapis.com/css?family=Cantarell&display=swap');
+
+.d-header {
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+    //box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.2) inset;
+    background: #fcfcfc;
+  &.hide-menus {
+    .headerLink:not(.keep) {
+      display: none;
+    }
+  }
+}
+
+.custom-header-links {
+  display: inline-flex;
+  align-items: right;
+  margin: 0;
+  .headerLink {
+    list-style: none;
+    font-family: 'Cantarell', sans-serif;
+    a {
+      padding: 6px 10px;
+      color: $header_primary;
+      font-size: $font-up-1;
+    }
+  }
+}
+
+//         Style the elements created in the </head> tab
+// ---------------------------------------------------------------------
+
+
+// Position the logo
+a#logo-link {
+    position: absolute;
+    top: 10px;
+}
+// Size the logo image
+img.logo-really-big {
+    max-height: 120 px !important;
+}
+// Hide homee logo in discourse header
+#site-logo {
+  display: none
+}
+.desktop-view .vmo,
+.mobile-view .vdo {
+  display: none !important;
+}
+
+// Hide elements
+.posters {
+    display: none;
+}
+
+
+.topic-list > tbody > tr:nth-child(2n+1), .topic-list > tbody > tr:nth-child(2n),
+.category-list > tbody > tr:nth-child(2n+1), .category-list > tbody > tr:nth-child(2n) {
+    background-color: #ffffff !important; 
+    border-bottom: 1px solid #cccccc;
+}
+
+.topic-list,  .category-list {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+.topic-avatar {
+    padding: 8px;
+    width: 60px;
+}
+
+.topic-body{
+    background-color: #ffffff !important;
+}
+
+.topic-map {
+    margin: 20px 11px 20px 11px;
+}
+.subcategories {
+    display: none;
+}
+.topics {
+    display: none;
+}
+
+.clearfix {
+    border-spacing: 0;
+}
