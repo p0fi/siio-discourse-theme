@@ -1,7 +1,7 @@
-logo_url:
+logo_link_target:
   default: ""
   type: string
-  description: "This is the source link to the top left logo"
+  description: "Link target for logo in the header"
 logo_alt:
   default: "siio.de"
   type: string

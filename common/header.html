@@ -1,7 +1,9 @@
 <header>
   <div class="header">
     <div class="logo">
-      <img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/SIIO-mit-Untertitel-1-1-e1569369745566.jpg" />
+      <a id="logo-url" target="blank" href="">
+        <img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/SIIO-mit-Untertitel-1-1-e1569369745566.jpg" />
+      </a>
     </div>
     <div class="banner">
       <a id="banner-url" target="blank" href=""><img id="banner-img" src=""/></a>
@@ -11,7 +13,9 @@
 <script type="text/discourse-plugin" version="0.8.13">
   var var_ad_banner = settings.ad_banner_img;
   var var_ad_banner_link = settings.ad_banner_link;
+  var var_logo_link = settings.logo_link_target;
 
   document.getElementById("banner-img").setAttribute("src",var_ad_banner);
   document.getElementById("banner-url").setAttribute("href",var_ad_banner_link);
+  document.getElementById("logo-url").setAttribute("href",var_logo_link);
 </script>
