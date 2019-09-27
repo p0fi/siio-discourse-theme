@@ -13,4 +13,16 @@ ad_banner_img:
 ad_banner_link:
   default: ""
   type: string
-  description: "Link target of the add banner in the header"
+  description: "Link target of the ad banner in the header"
+footer_imprint_link:
+  default: ""
+  type: string
+  description: "Link target for imprint link in the footer"
+footer_privacy_link:
+  default: ""
+  type: string
+  description: "Link target for privacy link in the footer"
+footer_coop_link:
+  default: ""
+  type: string
+  description: "Link target for cooperations link in the footer"
