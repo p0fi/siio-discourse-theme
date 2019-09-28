@@ -1,0 +1,16 @@
+<script type="text/discourse-plugin" version="0.8.13">
+  api.registerConnectorClass('below-footer', 'my-footer', {
+        setupComponent() {
+            const self = this;
+          this.set('year', new Date().getFullYear());
+        }
+      });
+</script>
+<!-- footer of page -->
+<script type="text/x-handlebars" data-template-name="/connectors/below-footer/siio-footer">
+  <div class="footer">
+    <div class="copyright">Copyright © 2012 – {{year}} by siio</div>
+    <div class="coop"><a href={{theme-setting 'footer_coop_link'}}>Kooperation</a></div>
+    <div class="links"><a href={{theme-setting 'footer_privacy_link'}}>Datenschutzerklärung</a><br /><a href={{theme-setting 'footer_imprint_link'}}>Impressum</a></div>
+  </div>
+</script>

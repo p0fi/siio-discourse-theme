@@ -1,24 +1,21 @@
 <script type="text/discourse-plugin" version="0.8.13">
   api.registerConnectorClass('below-footer', 'my-footer', {
-        setupComponent() {
-            const self = this;
-          this.set('year', new Date().getFullYear());
-        }
-      });
+    setupComponent() {
+      const self = this;
+      this.set('year', new Date().getFullYear());
+    }
+  });
 </script>
 <!-- ad after topic -->
 <script type="text/x-handlebars" data-template-name="/connectors/after-topic-footer-buttons/siio-footer-ad">
-    <div class="after-topic-ad">
-      <div class="ad"><a target="blank" href={{theme-setting 'footer-ad-link'}}>
-          <img src={{theme-setting 'footer-ad-img'}} />
-        </a></div>
-  </div>
-</script>
-<!-- footer of page -->
-<script type="text/x-handlebars" data-template-name="/connectors/below-footer/siio-footer">
-  <div class="footer">
-    <div class="copyright">Copyright © 2012 – {{year}} by siio</div>
-    <div class="coop"><a href={{theme-setting 'footer_coop_link'}}>Kooperation</a></div>
-    <div class="links"><a href={{theme-setting 'footer_privacy_link'}}>Datenschutzerklärung</a><br /><a href={{theme-setting 'footer_imprint_link'}}>Impressum</a></div>
-  </div>
+  <div class="after-topic-ad">
+      <div class="ad">
+        <a target="blank" href={{theme-setting 'footer-ad-link'}}>
+        <picture>
+          <source srcset={{theme-setting 'footer-ad-img'}} media="(min-width: 768px)"> <source srcset={{theme-setting 'footer-ad-img-mobile'}}
+          media="(max-width: 425px)"> <img src={{theme-setting 'footer-ad-img'}} />
+        </picture>
+        </a>
+      </div>
+    </div>    
 </script>
