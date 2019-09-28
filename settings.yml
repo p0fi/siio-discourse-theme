@@ -7,7 +7,7 @@ logo_alt:
   type: string
   description: "Alternative text to display for the top left image"
 ad_banner_img:
-  default: "https://dummyimage.com/470x100/CCC/ffffff.png&text=ad+banner+(470x100)"
+  default: "https://dummyimage.com/600x100/CCC/ffffff.png&text=ad+banner+(600x100)"
   type: string
   description: "URL to the ad banner picture in the header"
 ad_banner_link:
