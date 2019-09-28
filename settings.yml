@@ -7,7 +7,7 @@ logo_alt:
   type: string
   description: "Alternative text to display for the top left image"
 ad_banner_img:
-  default: "https://dummyimage.com/470x120/CCC/ffffff.png&text=ad+banner"
+  default: "https://dummyimage.com/470x100/CCC/ffffff.png&text=ad+banner+(470x100)"
   type: string
   description: "URL to the ad banner picture in the header"
 ad_banner_link:
@@ -31,6 +31,10 @@ footer-ad-link:
   type: string
   description: "Link target for cooperations link in the footer"
 footer-ad-img:
-  default: "https://dummyimage.com/750x80/CCC/ffffff.png&text=ad+banner"
+  default: "https://dummyimage.com/750x80/CCC/ffffff.png&text=ad+banner+(750x80)"
   type: string
   description: "Link target for cooperations link in the footer"
+footer-ad-img-mobile:
+  default: "https://dummyimage.com/355x80/CCC/ffffff.png&text=ad+banner+(355x80)"
+  type: string
+  description: "Link target for cooperations link in the footer"  
