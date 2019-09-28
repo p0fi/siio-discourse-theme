@@ -1,3 +1,7 @@
+show_header_banner:
+  type: bool
+  default: true
+  description: "Enable or disable the header banner"
 logo_link_target:
   default: ""
   type: string
@@ -26,15 +30,3 @@ footer_coop_link:
   default: ""
   type: string
   description: "Link target for cooperations link in the footer"
-footer-ad-link:
-  default: ""
-  type: string
-  description: "Link target for cooperations link in the footer"
-footer-ad-img:
-  default: "https://dummyimage.com/750x80/CCC/ffffff.png&text=ad+banner+(750x80)"
-  type: string
-  description: "Link target for cooperations link in the footer"
-footer-ad-img-mobile:
-  default: "https://dummyimage.com/355x80/CCC/ffffff.png&text=ad+banner+(355x80)"
-  type: string
-  description: "Link target for cooperations link in the footer"  
