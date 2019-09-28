@@ -26,3 +26,11 @@ footer_coop_link:
   default: ""
   type: string
   description: "Link target for cooperations link in the footer"
+footer-ad-link:
+  default: ""
+  type: string
+  description: "Link target for cooperations link in the footer"
+footer-ad-img:
+  default: "https://dummyimage.com/750x80/CCC/ffffff.png&text=ad+banner"
+  type: string
+  description: "Link target for cooperations link in the footer"

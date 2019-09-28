@@ -1,13 +1,40 @@
 // Hide header bar when landscape
-@media screen and (orientation:landscape) { 
+@media screen and (orientation: landscape) {
+  .d-header {
+    position: absolute;
+  }
+  .scrolled-down {
     .d-header {
-        position: absolute;
-    } 
-    .scrolled-down {
-        .d-header { display: none; }
+      display: none;
     }
+  }
 }
+
+// Show small logo in top bar when scrolled down
+#site-logo.logo-small {
+  display: inline;
+}
+
 // Prevent zoom in text inputs
-select, input, textarea {
-  font-size: 16px!important;
+select,
+input,
+textarea {
+  font-size: 16px !important;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  .copyright {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .links {
+    grid-area: 2 / 1 / 3 / 2;
+  }
 }

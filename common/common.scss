@@ -6,16 +6,16 @@
 }
 
 .timeline-container .topic-timeline .timeline-scrollarea {
-  border-color: #75B325 !important;
+  border-color: #75b325 !important;
 }
 .timeline-handle {
-  background-color: #75B325 !important;
+  background-color: #75b325 !important;
 }
 
 //         Style the elements created in the Header tab
 // ---------------------------------------------------------------------
 .header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(2, 1fr) 2fr 1fr;
   grid-template-rows: 1fr;
@@ -32,17 +32,30 @@
   }
 }
 
+//         Style the ad after the topic butoons
+// ---------------------------------------------------------------------
+.after-topic-ad {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  .ad {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+}
+
 //         Style the elements created in the Footer tab
 // ---------------------------------------------------------------------
 // Create three equal columns that floats next to each other
 .footer {
   a {
-    color: #75B325;
+    color: #75b325;
   }
   a:hover {
     text-decoration: underline;
   }
-  background-color: #24252A;
+  background-color: #24252a;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -53,7 +66,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: #F9F9F9;
+    color: #f9f9f9;
   }
   .coop {
     grid-area: 1 / 2 / 2 / 3;
@@ -87,8 +100,8 @@
 .topic-list > tbody > tr:nth-child(2n),
 .category-list > tbody > tr:nth-child(2n + 1),
 .category-list > tbody > tr:nth-child(2n) {
-  background-color: #FFFFFF !important;
-  border-bottom: 1px solid #CCCCCC;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #cccccc;
 }
 
 .topic-list,
@@ -102,7 +115,7 @@
 }
 
 .topic-body {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
 }
 
 .topic-map {
