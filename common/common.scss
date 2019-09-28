@@ -12,39 +12,6 @@
   background-color: #75b325 !important;
 }
 
-//         Style the elements created in the Header tab
-// ---------------------------------------------------------------------
-// Powered by bar
-.powered-by-bar {
-  background-color: #9b9b9b;
-  .logo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px;
-  }
-}
-// Move the discourse menu bar below header
-.ember-application .d-header {
-  margin-top: 170px;
-}
-// Dont do this when scrolled down
-.docked .ember-application .d-header {
-  margin-top: 0;
-}
-
-@media (max-width: 629px) {
-  img#ad-banner {
-    display: none;
-  }
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 //         Style the elements created in the Footer tab
 // ---------------------------------------------------------------------
 // Create three equal columns that floats next to each other
@@ -87,6 +54,11 @@
   display: none;
 }
 
+// Subcategories in categories view
+.subcategories {
+  display: none;
+}
+
 // site logo in discourse header
 #site-logo {
   display: none;
@@ -100,14 +72,14 @@
 .topic-list > tbody > tr:nth-child(2n),
 .category-list > tbody > tr:nth-child(2n + 1),
 .category-list > tbody > tr:nth-child(2n) {
-  background-color: #ffffff !important;
+  background-color: #f2f2f2 !important;
   border-bottom: 1px solid #cccccc;
 }
 
 .topic-list,
 .category-list {
   border-collapse: separate;
-  border-spacing: 0 1em;
+  border-spacing: 0 0.5em;
 }
 .topic-avatar {
   padding: 8px;
