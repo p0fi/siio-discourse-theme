@@ -10,10 +10,10 @@
   }
 }
 
-// Show small logo in top bar when scrolled down
-#site-logo.logo-small {
-  display: inline;
-}
+// Show small logo in top bar when scrolled down - buggy -> sidescroll
+//#site-logo.logo-small {
+// display: inline;
+//}
 
 // Prevent zoom in text inputs
 select,
