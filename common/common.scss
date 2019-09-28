@@ -14,22 +14,35 @@
 
 //         Style the elements created in the Header tab
 // ---------------------------------------------------------------------
-.header {
-  background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) 2fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-
+// Powered by bar
+.powered-by-bar {
+  background-color: #9b9b9b;
   .logo {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  .banner {
-    grid-area: 1 / 3 / 2 / 4;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    padding: 5px;
   }
+}
+// Move the discourse menu bar below header
+.ember-application .d-header {
+  margin-top: 170px;
+}
+// Dont do this when scrolled down
+.docked .ember-application .d-header {
+  margin-top: 0;
+}
+
+@media (max-width: 629px) {
+  img#ad-banner {
+    display: none;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 //         Style the elements created in the Footer tab

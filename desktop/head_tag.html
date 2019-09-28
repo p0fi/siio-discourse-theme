@@ -1,5 +1,5 @@
 <script type="text/discourse-plugin" version="0.8.13">
-  api.registerConnectorClass('below-footer', 'my-footer', {
+  api.registerConnectorClass('below-footer', 'siio-footer', {
         setupComponent() {
             const self = this;
           this.set('year', new Date().getFullYear());
@@ -7,13 +7,16 @@
       });
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-site-header/siio-header">
-  <div class="wrap">
-    <div class="copyright">Copyright © 2012 – {{year}} by siio</div>
-    <div class="coop"><a href={{theme-setting 'footer_coop_link'}}>Kooperation</a></div>
-    <div class="links"><a href={{theme-setting 'footer_privacy_link'}}>Datenschutzerklärung</a><br /><a href={{theme-setting 'footer_imprint_link'}}>Impressum</a></div>
-  </div>
+  <div class="powered-by-bar"><div class="wrap logo"><img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/2power-by-Aeotec.png" height="30"/></div></div>
+    <div><div class="wrap logo">
+      <img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/SIIO-mit-Untertitel-1-1-e1569369745566.jpg" />
+        {{#if (theme-setting 'show_header_banner')}}
+        <div class="wrap"><img id="ad-banner" src={{theme-setting 'ad_banner_img'}} /></div>
+    {{else}}
+    {{/if}}
+    </div>
+    </div>
 </script>
-
 <!-- footer of page -->
 <script type="text/x-handlebars" data-template-name="/connectors/below-footer/siio-footer">
   <div class="footer">
