@@ -15,7 +15,9 @@
   <div class="wrap">
     <div class="header">
       <div class="logo">
-        <img src="https://siio-static-content.s3.eu-central-1.amazonaws.com/img/header_logo.jpg">
+        <a id="logo-url" target="blank" href={{theme-setting 'logo_link_target'}}>
+          <img src="https://siio-static-content.s3.eu-central-1.amazonaws.com/img/header_logo.jpg">
+        </a>
       </div>
       <div class="ad-banner">
         <img id="ad-banner" src={{theme-setting 'ad_banner_img'}} />
@@ -25,7 +27,9 @@
   <!-- banner disabled -->
   {{else}}
   <div class="wrap">
-    <img src="https://siio-static-content.s3.eu-central-1.amazonaws.com/img/header_logo.jpg">
+    <a id="logo-url" target="blank" href={{theme-setting 'logo_link_target'}}>
+      <img src="https://siio-static-content.s3.eu-central-1.amazonaws.com/img/header_logo.jpg">
+    </a>
   </div>
   {{/if}}
 </script>
