@@ -4,7 +4,7 @@
 // ---------------------------------------------------------------------
 // Powered by bar
 .powered-by-bar {
-  background-color: #9b9b9b;
+  background-color: $top_banner_color;
   .logo {
     display: flex;
     justify-content: flex-end;
@@ -14,7 +14,11 @@
 }
 // Move the discourse menu bar below header
 .ember-application .d-header {
-  margin-top: 170px;
+  @if $show_top_banner_bar == 'true' {
+    margin-top: 170px;
+  } @else {
+    margin-top: 130px;
+  }
 }
 // Dont do this when scrolled down
 .docked .ember-application .d-header {

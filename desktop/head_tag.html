@@ -9,7 +9,9 @@
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-site-header/siio-header">
   <!-- powered by bar -->
-  <div class="powered-by-bar"><div class="wrap logo"><img src="https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/2power-by-Aeotec.png" height="30"/></div></div>
+  {{#if (theme-setting 'show_top_banner_bar')}}
+  <div class="powered-by-bar"><div class="wrap logo"><img src={{theme-setting 'top_banner_bar_image'}} height="30"/></div></div>
+  {{/if}}
   <!-- banner enabled -->
   {{#if (theme-setting 'show_header_banner')}}
   <div class="wrap">
