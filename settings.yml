@@ -1,3 +1,15 @@
+show_top_banner_bar:
+  type: bool
+  default: true
+  description: "Enable or disable the banner bar at the top of the page"
+top_banner_bar_image:
+  default: ""
+  type: string
+  description: "URL to the ad picture in the banner bar"
+top_banner_color:
+  default: "#9B9B9B"
+  type: string
+  description: "Background color of the top banner bar (hex)"
 show_header_banner:
   type: bool
   default: true
