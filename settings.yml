@@ -3,7 +3,7 @@ show_top_banner_bar:
   default: true
   description: "Enable or disable the banner bar at the top of the page"
 top_banner_bar_image:
-  default: ""
+  default: "https://b9esmv0.myraidbox.de/wp-content/uploads/2019/09/2power-by-Aeotec.png"
   type: string
   description: "URL to the ad picture in the banner bar"
 top_banner_color:
