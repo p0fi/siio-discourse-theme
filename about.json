@@ -1,5 +1,20 @@
 {
   "name": "siio - Community",
   "about_url": "siio.de",
-  "license_url": "https://github.com/tshenry/discourse-big-header-little-header/blob/master/LICENSE"
+  "license_url": "https://github.com/tshenry/discourse-big-header-little-header/blob/master/LICENSE",
+  "color_schemes": {
+    "Siio": {
+      "primary": "222222",
+      "secondary": "FFFFFF",
+      "tertiary": "75B325",
+      "quaternary": "75B325",
+      "header_background": "FFFFFF",
+      "header_primary": "333333",
+      "highlight": "FFFF4D",
+      "danger": "E45735",
+      "success": "009900",
+      "love": "FA6C8D",
+      "test": "9B9B9B"
+    }
+ }
 }
