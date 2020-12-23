@@ -17,7 +17,7 @@
   @if $show_top_banner_bar == 'true' {
     margin-top: 170px;
   } @else {
-    margin-top: 130px;
+    // margin-top: 130px;
   }
 }
 // Dont do this when scrolled down
