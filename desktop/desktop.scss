@@ -12,18 +12,6 @@
     padding: 5px;
   }
 }
-// Move the discourse menu bar below header
-.ember-application .d-header {
-  @if $show_top_banner_bar == 'true' {
-    margin-top: 170px;
-  } @else {
-    // margin-top: 130px;
-  }
-}
-// Dont do this when scrolled down
-.docked .ember-application .d-header {
-  margin-top: 0;
-}
 
 // Hide banner if window gets too narrow
 @media (max-width: 800px) {
